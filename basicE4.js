@@ -10,10 +10,12 @@ const server = http.createServer((req, res) => {
  res.statusCode = 200;
 
 
-app.use((req, res, next) => {
-    console.log('Time:', Date.now());
-    next();
-  });
+// app.use((req, res, next) => {
+//     console.log('Time:', Date.now());
+//     next();
+//   });
+
+console.log(req);
 
  res.setHeader("Content-Type", "text/html");
  switch (req.url) {
